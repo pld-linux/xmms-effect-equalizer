@@ -6,6 +6,7 @@ Release:	2
 License:	GPL v2
 Group:		X11/Applications/Sound
 Source0:	http://telia.dl.sourceforge.net/sourceforge/equ/eq-xmms-%{version}.tar.gz
+# Source0-md5:	bddbe46e4460c3f131e9e35ae73a7be0
 URL:		http://equ.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
