@@ -4,7 +4,7 @@ Name:		xmms-effect-equalizer
 Version:	0.3
 Release:	1
 License:	GPL v2
-Group:		X11/Applications/Multimedia
+Group:		X11/Applications/Sound
 Source0:	http://telia.dl.sourceforge.net/sourceforge/equ/eq-xmms-%{version}.tar.gz
 URL:		http://equ.sourceforge.net/
 BuildRequires:	autoconf
