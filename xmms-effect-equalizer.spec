@@ -36,6 +36,7 @@ wzmocnienia na pasmo.
 
 %build
 rm -f missing
+%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
 %{__automake}
