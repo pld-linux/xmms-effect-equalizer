@@ -1,16 +1,16 @@
 Summary:	Graphical Equalizer for XMMS
 Summary(pl):	Korektor dla XMMS
 Name:		xmms-effect-equalizer
-Version:	0.2
+Version:	0.3
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://telia.dl.sourceforge.net/sourceforge/equ/eq-xmms-%{version}.tar.gz
 URL:		http://equ.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
-BuildRequires:	xmms-devel
+BuildRequires:	xmms-devel >= 1.2.7
 Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,8 +39,7 @@ rm -f missing
 aclocal
 %{__autoconf}
 %{__automake}
-%configure \
-	--enable-independent-channels
+%configure
 %{__make}
 
 %install
