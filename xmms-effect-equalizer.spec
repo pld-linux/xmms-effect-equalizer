@@ -19,14 +19,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 EQ is an effect plugin for XMMS that acts as an equalizer of the audio
-signal passed to it by XMMS, not just mp3's. It features three
+signal passed to it by XMMS, not just MP3's. It features three
 different numbers of bands, all of them with ISO central frequencies
 (10, 15, and 31), independent gain settings for left and right
 channels, and more than +-14dB of gain per band.
 
 %description -l pl
 EQ jest wtyczk± do XMMS-a, która dzia³a jako equalizer sygna³u audio
-przekazywanego przez XMMS, nie tylko mp3. Posiada 3 ró¿ne liczby pasm,
+przekazywanego przez XMMS, nie tylko MP3. Posiada 3 ró¿ne liczby pasm,
 wszystkie zgodne z czêstotliwo¶ciami ISO (10, 15 i 31), niezale¿ne
 ustawianie wzmocnienia dla prawego i lewego kana³u oraz ponad +-14dB
 wzmocnienia na pasmo.
