@@ -2,7 +2,7 @@ Summary:	Graphical Equalizer for XMMS
 Summary(pl):	Korektor dla XMMS
 Name:		xmms-effect-equalizer
 Version:	0.3
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications/Sound
 Source0:	http://telia.dl.sourceforge.net/sourceforge/equ/eq-xmms-%{version}.tar.gz
@@ -14,6 +14,7 @@ BuildRequires:	xmms-devel >= 1.2.7
 Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_xmms_plugin_dir	%(xmms-config --effect-plugin-dir)
 
 %description
 EQ is an effect plugin for XMMS that acts as an equalizer of the audio
@@ -45,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	libdir=`%{_bindir}/xmms-config --effect-plugin-dir`
+	libdir=%{_xmms_plugin_dir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -53,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS BUGS ChangeLog NEWS README TODO
-%attr(755,root,root) %{_libdir}/xmms/*/*
+%attr(755,root,root) %{_xmms_plugin_dir}/*
