@@ -10,9 +10,9 @@ Source0:	http://dl.sourceforge.net/equ/eq-xmms-%{version}.tar.gz
 URL:		http://equ.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gtk+-devel >= 1.2.7
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.125
-BuildRequires:	xmms
 BuildRequires:	xmms-devel >= 1.2.7
 Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -35,12 +35,12 @@ wzmocnienia na pasmo.
 %setup -q -n eq-xmms-%{version}
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	XMMS="%{_bindir}/xmms"
 %{__make}
 
 %install
@@ -50,10 +50,12 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	libdir=%{xmms_effect_plugindir}
 
+rm -f $RPM_BUILD_ROOT%{xmms_effect_plugindir}/*.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS BUGS ChangeLog NEWS README TODO
-%attr(755,root,root) %{xmms_effect_plugindir}/*
+%attr(755,root,root) %{xmms_effect_plugindir}/libeq.so
