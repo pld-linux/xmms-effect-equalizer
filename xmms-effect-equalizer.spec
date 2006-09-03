@@ -2,7 +2,7 @@ Summary:	Graphical Equalizer for XMMS
 Summary(pl):	Korektor dla XMMS
 Name:		xmms-effect-equalizer
 Version:	0.7
-Release:	0.1
+Release:	1
 License:	GPL v2
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/equ/eq-xmms-%{version}.tar.gz
