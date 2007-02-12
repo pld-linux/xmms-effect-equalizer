@@ -1,5 +1,5 @@
 Summary:	Graphical Equalizer for XMMS
-Summary(pl.UTF-8):   Korektor dla XMMS
+Summary(pl.UTF-8):	Korektor dla XMMS
 Name:		xmms-effect-equalizer
 Version:	0.7
 Release:	1
