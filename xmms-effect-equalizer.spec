@@ -1,5 +1,5 @@
 Summary:	Graphical Equalizer for XMMS
-Summary(pl):	Korektor dla XMMS
+Summary(pl.UTF-8):   Korektor dla XMMS
 Name:		xmms-effect-equalizer
 Version:	0.7
 Release:	1
@@ -24,11 +24,11 @@ different numbers of bands, all of them with ISO central frequencies
 (10, 15, and 31), independent gain settings for left and right
 channels, and more than +-14dB of gain per band.
 
-%description -l pl
-EQ jest wtyczk± do XMMS-a, ktÛra dzia≥a jako equalizer sygna≥u audio
-przekazywanego przez XMMS, nie tylko MP3. Posiada 3 rÛøne liczby pasm,
-wszystkie zgodne z czÍstotliwo∂ciami ISO (10, 15 i 31), niezaleøne
-ustawianie wzmocnienia dla prawego i lewego kana≥u oraz ponad +-14dB
+%description -l pl.UTF-8
+EQ jest wtyczkƒÖ do XMMS-a, kt√≥ra dzia≈Ça jako equalizer sygna≈Çu audio
+przekazywanego przez XMMS, nie tylko MP3. Posiada 3 r√≥≈ºne liczby pasm,
+wszystkie zgodne z czƒôstotliwo≈õciami ISO (10, 15 i 31), niezale≈ºne
+ustawianie wzmocnienia dla prawego i lewego kana≈Çu oraz ponad +-14dB
 wzmocnienia na pasmo.
 
 %prep
